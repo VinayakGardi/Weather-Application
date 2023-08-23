@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sunny_background"
+
     tools:context=".MainActivity">
 
     <SearchView
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_city"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/sun" />
+        />
 
 
     <TextView
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/merriweathersans_medium"
-        android:text="Sunny"
+        android:text=""
         android:layout_marginHorizontal="10dp"
         android:textAllCaps="true"
         android:textColor="@color/black"
@@ -53,8 +53,9 @@
         android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/loctaion"
         android:drawablePadding="5dp"
+        android:textAllCaps="true"
         android:fontFamily="@font/merriweathersans_bold"
-        android:text="Delhi"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="@dimen/_18sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/txt_min_temperature"
+        android:id="@+id/txt_max_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -106,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_temperature" />
 
     <TextView
-        android:id="@+id/txt_max_temperature"
+        android:id="@+id/txt_min_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -114,9 +115,9 @@
         android:text="Min - 00.00 °C"
         android:textColor="@color/black"
         android:textSize="@dimen/_18sdp"
-        app:layout_constraintEnd_toEndOf="@+id/txt_min_temperature"
-        app:layout_constraintStart_toStartOf="@+id/txt_min_temperature"
-        app:layout_constraintTop_toBottomOf="@+id/txt_min_temperature" />
+        app:layout_constraintEnd_toEndOf="@+id/txt_max_temperature"
+        app:layout_constraintStart_toStartOf="@+id/txt_max_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/txt_max_temperature" />
 
     <TextView
         android:id="@+id/txt_day"
@@ -124,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/merriweathersans_medium"
-        android:text="Tuesday"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/merriweathersans_medium"
-        android:text="22/08/2023"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="@+id/txt_day"
@@ -180,7 +181,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="12dp"
                     android:fontFamily="@font/merriweathersans_semibold"
-                    android:text="000 hPa"
+                    android:text="0 hPa"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -280,7 +281,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/merriweathersans_semibold"
-                    android:text="Sunny"
+                    android:text=""
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
