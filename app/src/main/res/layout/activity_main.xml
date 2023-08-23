@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/loctaion"
+        android:drawableLeft="@drawable/location"
         android:drawablePadding="5dp"
         android:textAllCaps="true"
         android:fontFamily="@font/merriweathersans_bold"
